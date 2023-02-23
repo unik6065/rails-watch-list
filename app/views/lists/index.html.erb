@@ -1,0 +1,11 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)));">
+  <div class="container">
+    <h1>Save any kind of movie</h1>
+  </div>
+</div>
+
+<div class="main-container">
+  <% @lists.each do |list|%>
+    <%= render 'list-card', list: list %>
+  <% end %>
+</div>

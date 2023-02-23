@@ -1,0 +1,15 @@
+.card{
+  border-radius: 5px;
+  height: 150px;
+  box-shadow: 2px 2px 5px #eee;
+  font-size: 25px;
+
+  .bookmark{
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  &:hover{
+    background-color: red;
+  }
+}
