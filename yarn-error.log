@@ -1,8 +1,8 @@
 Arguments: 
-  /home/romain/.nvm/versions/node/v16.15.1/bin/node /home/romain/.nvm/versions/node/v16.15.1/bin/yarn add @hotwired/turbo-rails
+  /home/romain/.nvm/versions/node/v16.15.1/bin/node /home/romain/.nvm/versions/node/v16.15.1/bin/yarn add bootstrap @popperjs/core
 
 PATH: 
-  /home/romain/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/bin:/home/romain/.rbenv/versions/3.1.2/bin:/home/romain/.rbenv/libexec:/home/romain/.rbenv/plugins/ruby-build/bin:./bin:./node_modules/.bin:/home/romain/.nvm/versions/node/v16.15.1/bin:/home/romain/.rbenv/shims:/home/romain/.rbenv/bin:/home/romain/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Romain/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Romain/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Romain/AppData/Local/GitHubDesktop/bin
+  ./bin:./node_modules/.bin:/home/romain/.nvm/versions/node/v16.15.1/bin:/home/romain/.rbenv/shims:/home/romain/.rbenv/bin:/home/romain/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Romain/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Romain/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Romain/AppData/Local/GitHubDesktop/bin:/usr/local/sbin
 
 Yarn version: 
   1.22.19
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@hotwired%2fturbo-rails: ETIMEDOUT
+  Error: https://registry.yarnpkg.com/bootstrap: ETIMEDOUT
       at Timeout._onTimeout (/home/romain/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:141550:19)
       at listOnTimeout (node:internal/timers:559:17)
       at processTimers (node:internal/timers:502:7)
@@ -24,6 +24,7 @@ npm manifest:
     "name": "app",
     "private": "true",
     "dependencies": {
+      "@hotwired/stimulus": "^3.2.1",
       "webpack": "^5.75.0",
       "webpack-cli": "^5.0.1"
     },
@@ -44,6 +45,11 @@ Lockfile:
     version "0.5.7"
     resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
     integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
+  
+  "@hotwired/stimulus@^3.2.1":
+    version "3.2.1"
+    resolved "https://registry.yarnpkg.com/@hotwired/stimulus/-/stimulus-3.2.1.tgz#e3de23623b0c52c247aba4cd5d530d257008676b"
+    integrity sha512-HGlzDcf9vv/EQrMJ5ZG6VWNs8Z/xMN+1o2OhV1gKiSG6CqZt5MCBB1gRg5ILiN3U0jEAxuDTNPRfBcnZBDmupQ==
   
   "@jridgewell/gen-mapping@^0.3.0":
     version "0.3.2"
