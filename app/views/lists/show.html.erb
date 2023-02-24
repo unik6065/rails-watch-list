@@ -5,11 +5,6 @@
 
   <div class="btn btn-primary" data-controller='add-movie-list' data-action="click->add-movie-list#show">Add a movie</div>
 
-  <div class="hide" id='add-movie-container'>
-  <%= simple_form_for [@list, @bookmark] do |f| %>
-    <%= f.association :movie, collection: Movie.all%>
-    <%= f.input :comment %>
-    <%= f.submit class: "btn btn-flat"%>
-  <% end %>
-  </div>
+
+
 </div>
