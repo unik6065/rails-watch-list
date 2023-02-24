@@ -1,5 +1,7 @@
 <%= link_to movie_path(movie) do%>
   <div class="movie-card">
     <h1><%= movie.title %></h1>
+    <h2><%= movie.bookmarks.find_by(list: @list).comment %></h2>
+    <%= link_to 'delete', bookmark_path(movie.bookmarks.find_by(list: @list)), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
   </div>
 <% end %>
