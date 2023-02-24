@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :lists, only: %i[index]
+  resources :lists, only: %i[index show]
+  resources :movies, only: %i[show]
 end

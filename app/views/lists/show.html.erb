@@ -1,0 +1,7 @@
+<div class="show-main-container">
+  <% @list.movies.each do |movie| %>
+    <%= render 'show-movie-card', movie: %>
+  <% end %>
+
+  <div class="btn btn-primary" data-controller='hello'>Add a movie</div>
+</div>

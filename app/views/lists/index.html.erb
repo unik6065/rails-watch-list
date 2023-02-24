@@ -6,6 +6,8 @@
 
 <div class="main-container">
   <% @lists.each do |list|%>
-    <%= render 'list-card', list: list %>
+    <%= link_to list_path(list) do %>
+      <%= render 'list-card', list: list %>
+    <% end %>
   <% end %>
 </div>

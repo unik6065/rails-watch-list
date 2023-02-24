@@ -10,6 +10,11 @@
   }
 
   &:hover{
-    background-color: red;
+    box-shadow: 2px 2px 5px #cbcbcb;
   }
+}
+
+a{
+  text-decoration: inherit;
+  color: inherit;
 }
