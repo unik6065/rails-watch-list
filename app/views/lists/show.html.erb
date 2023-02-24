@@ -4,7 +4,12 @@
   <% end %>
 
   <div class="btn btn-primary" data-controller='add-movie-list' data-action="click->add-movie-list#show">Add a movie</div>
-
-
+  <div class="hide" id='add-movie-container'>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.association :movie, collection: Movie.where.not(id: @list.movies.ids)%>
+    <%= f.input :comment %>
+    <%= f.submit class: "btn btn-flat"%>
+  <% end %>
+  </div>
 
 </div>
